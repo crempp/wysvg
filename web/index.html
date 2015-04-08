@@ -1,21 +1,24 @@
 <html>
 <head>
 <title>wySVGiwyg</title>
-<link rel="css/stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style.css" />
 <script type="text/javascript" src="js/main.js"> </script>
 <script type="text/javascript" src="js/wysvg.js"> </script>
 </head>
 <body>
+<div class="wrap">
 <header>
-<h1>wySVGiwyg</h1>
-<p>What you SVG is what you get</p>
+    <h1>wySVGiwyg</h1>
+    <p>What you SVG is what you get</p>
 </header>
-<div>
 <p>This is the very first webpage to every try to the wySVG editor.</p>
-<wysvg></wysvg>
+<svg is="wy-svg">
+    <text x="0" y="0" dominant-baseline="hanging">Type here</text>
+    <rect x="1" y="20" height="40" width="234" fill="yellow" stroke-width="3px"></rect>
+</svg>
 </div>
 <footer>
-<span>I don't know.  What goes in a footer?</span>
+<span>I don't know.  What goes in a footer?</span><span class="copyright">&copy; BatRemCo 2015</span>
 </footer>
 </body>
 </html>
