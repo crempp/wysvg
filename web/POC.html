@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>wySVG P.O.C.</title>
+
+    <!-- Bootstrap -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="css/vendor/font-awesome.css" rel="stylesheet">
+
+    <link href="css/poc-style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">wySVG P.O.C.</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#save"><i class="fa fa-save"></i></a></li>
+            <li><a href="#open"><i class="fa fa-folder-open-o"></i></a></li>
+            <li><a href="#bold"><i class="fa fa-bold"></i></a></li>
+            <li><a href="#italic"><i class="fa fa-italic"></i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid container-height editor-container">
+      <div class="row">
+        <!--
+          Notes:
+            All of these ratios are debatable, dependant on font, browser, OS,
+            etc. People can't seem to agree on anything when it comes to fonts.
+            * 1 inch = 96 pixels = 72pt
+            * 1pt = 1.33px
+            * A line is 120-145% of the point size
+
+
+          Refs:
+            * http://practicaltypography.com/
+            * https://developer.mozilla.org/en-US/docs/Web/SVG
+        -->
+
+        <!-- SVG PAGE -->
+        <svg id="wy-svg-editor" is="wy-svg" fill="white" shape-rendering="crispEdges">
+          <!-- Page box -->
+          <rect x="0" y="0" height="100%" width="100%" fill="white"></rect>
+
+          <!-- Margins group -->
+          <g>
+            <!-- Margins box -->
+            <rect x="48" y="48" height="960" width="672" stroke="black" stroke-width="1px" stroke-dasharray="1,3"></rect>
+            <text x="58" y="78" class="p">
+              <tspan class="h1">An h1 header</tspan>
+            </text>
+
+            <!-- Paragraph -->
+            <text x="58" y="124" class="p">
+              <tspan class="">Paragraphs are separated by a blank line.</tspan>
+            </text>
+
+            <!-- Bold/italic/monospace -->
+            <text x="58" y="150" class="p">
+              <tspan class="">2nd paragraph. <tspan class="i">Italic</tspan>, <tspan class="b">bold</tspan>, and <tspan class="m">monospace</tspan>.</tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+    </div><!-- /.container -->
+  </body>
+</html>

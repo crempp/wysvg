@@ -1,0 +1,62 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#wy-svg-editor {
+    width: 100%;
+    height: 300px;
+}
+
+.container-height {
+    margin: 0 auto;
+    min-height: 88%;
+    height: auto;
+}
+.editor-container {
+    background-color: #ddd;
+}
+#wy-svg-editor {
+    width: 8.5in;
+    height: 11in;
+    margin: 0px auto;
+    display: block;
+
+
+}
+/******** Editor styles *****************/
+#wy-svg-editor text{
+    text-anchor: start;
+    font-family: Arial;
+    font-size  : 12px;
+    stroke: #000000;
+    fill: #000000;
+    font-weight: 100;
+
+    webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased
+}
+
+/*Paragraph*/
+#wy-svg-editor .p {}
+/*Bold*/
+#wy-svg-editor .b {font-weight: bold;}
+/*Italic*/
+#wy-svg-editor .i {font-style: italic;}
+/*Monospace*/
+#wy-svg-editor .m {font-family: "Courier New", Courier, monospace;}
+
+/*Headers*/
+#wy-svg-editor .h1 {font-size: 32px; font-weight: bold;}
+#wy-svg-editor .h2 {font-size: 24px; font-weight: bold;}
+#wy-svg-editor .h3 {font-size: 19px; font-weight: bold;}
+#wy-svg-editor .h4 {font-size: 13px; font-weight: bold;}
+#wy-svg-editor .h5 {font-size: 13px; font-weight: bold;}
+#wy-svg-editor .h6 {font-size: 11px; font-weight: bold;}

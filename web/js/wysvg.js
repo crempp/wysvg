@@ -37,14 +37,18 @@
 				wysvg.selectText(e);
 				break;
 			default:
-				alert("you clicked on the not-text!");
+				console.warn("you clicked on the not-text!");
 				break;
 		}
 	};
+
+    wysvg.keyE = function(e){
+		console.log(e);
+	};
 	
 	wysvg.createdCallback = function(){
-		var self = this;
 		this.addEventListener('click', this.clickE);
+        this.addEventListener('keydown', this.keyE);
 	};
 
 	document.registerElement('wy-svg', {
